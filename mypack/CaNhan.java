@@ -1,3 +1,4 @@
+package mypack;
 
 public abstract class CaNhan {
     private String hoTen;
@@ -6,7 +7,7 @@ public abstract class CaNhan {
     private String sdt;
 
     public CaNhan(String hoTen, int tuoi, String diaChi, String sdt){
-        this.hoTen = hoten;
+        this.hoTen = hoTen;
         this.tuoi = tuoi;
         this.diaChi = diaChi;
         this.sdt = sdt;
@@ -16,7 +17,7 @@ public abstract class CaNhan {
         return this.hoTen;
     }
     public void sethoTen(String hoTen){
-        this.hoTen = hoten;
+        this.hoTen = hoTen;
     }
     public int gettuoi(){
         return this.tuoi;
@@ -36,5 +37,6 @@ public abstract class CaNhan {
     public void setsdt(String sdt){
         this.sdt = sdt;
     }
+    
     abstract String hienThiTT();
 }

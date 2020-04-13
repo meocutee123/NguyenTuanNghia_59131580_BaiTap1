@@ -1,10 +1,11 @@
+package mypack;
 
 public class GiaoVien extends CaNhan {
     private String monDay;
     private String toBoMon;
 
-    public GiaoVien(String hoTen, int tuoi, String sdt, String monDay, String toBoMon){
-        super(hoTen, tuoi, sdt);
+    public GiaoVien(String hoTen, int tuoi, String diaChi, String sdt, String monDay, String toBoMon){
+        super(hoTen, tuoi, diaChi, sdt);
         this.monDay = monDay;
         this.toBoMon = toBoMon;
     }
@@ -23,6 +24,6 @@ public class GiaoVien extends CaNhan {
     }
     @Override
     public String hienThiTT(){
-        return hoTen + " " + tuoi + " " + diaChi + " " + sdt +" " + monDay + " " + toBoMon;
+        return gethoTen() + " " + gettuoi() + " " + getdiaChi() + " " + getsdt() +" " + monDay + " " + toBoMon;
     }
 }

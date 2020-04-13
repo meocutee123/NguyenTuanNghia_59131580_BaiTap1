@@ -1,3 +1,4 @@
+package mypack;
 
 public class HocSinh extends CaNhan {
     private String lop;
@@ -23,6 +24,6 @@ public class HocSinh extends CaNhan {
     }
     @Override
     public String hienThiTT(){
-        return hoTen + " " + tuoi + " " + diaChi + " " + sdt +" " + lop + " " + nangKhieu;
+        return gethoTen() + " " + gettuoi() + " " + getdiaChi() + " " + getsdt() +" " + lop + " " + nangKhieu;
     }
 }
